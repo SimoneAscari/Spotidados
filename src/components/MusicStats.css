@@ -1,1 +1,171 @@
+.music-stats {
+  font-family: "Afacad", sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.music-stats .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.music-stats button {
+  background: #30cbd0;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background 0.3s, transform 0.2s;
+  margin: 5px;
+}
+
+.music-stats button:hover {
+  background: #1ea5a8;
+  transform: scale(1.05);
+}
+
+.music-stats table {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.music-stats table thead {
+  background: #2a2626;
+}
+
+.music-stats table th {
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 16px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.music-stats table tbody {
+  background: #695858;
+}
+
+.music-stats table td {
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 14px;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.music-stats table tr:nth-child(even) {
+  background: #5d4b4b;
+}
+
+.show-more {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.show-more button {
+  background: #30cbd0;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.show-more button:hover {
+  background: #1ea5a8;
+  transform: scale(1.05);
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+table tr td {
+  background-color: #5d4b4b;
+  padding: 12px;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+}
+
+table tr:nth-child(even) {
+  background-color: #695858;
+}
+
+table tr:last-child td {
+  border-bottom: none;
+}
+
+table th {
+  background-color: #2a2626;
+  color: #ffffff;
+  padding: 12px;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.music-stats .buttons button {
+  padding: 12px 25px;
+  font-size: 18px;
+}
+
+@media (max-width: 600px) {
+  .music-stats .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .music-stats button {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  .music-stats table {
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .music-stats table th,
+  .music-stats table td {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .show-more button {
+    padding: 12px 0;
+    font-size: 16px;
+  }
+}
 
